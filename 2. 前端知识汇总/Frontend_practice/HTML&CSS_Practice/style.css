@@ -1,0 +1,56 @@
+/* 对整个整个html标签设置样式（影响整个页面的基础样式） */
+html {
+    font-size: 16px; /* 设定页面基础字体大小为16像素（px是像素单位） */
+    font-family: "Open Sans", sans-serif; /* 设定页面默认字体：优先使用"Open Sans"字体，如果没有则使用系统默认无衬线字体（sans-serif） */
+  }
+
+/* 对h1标题标签设置样式 */
+h1 {
+    font-size: 60px; /* h1标题的字体大小为60像素（比基础字体大） */
+    text-align: center; /* 文字居中对齐 */
+  }
+
+/* 同时对p标签（段落）和li标签（列表项）设置相同样式 */
+p,
+li {
+    font-size: 16px; /* 字体大小为16像素（和基础字体一致） */
+    line-height: 2; /* 行高为字体大小的2倍（让行与行之间更宽松，易读） */
+    letter-spacing: 1px; /* 字母/文字之间的间距为1像素（增加可读性） */
+  }
+
+/* 再次对html标签设置样式（可以多次设置，后面的样式会覆盖前面重复的属性） */
+html {
+    background-color: #00539f; /* 页面最外层背景色为深蓝色（#00539f是十六进制颜色码） */
+  }
+
+/* 对body标签设置样式（body是页面内容的容器） */
+body {
+    width: 600px; /* 内容区宽度固定为600像素 */
+    margin: 0 auto; /* 上下外边距为0，左右自动居中（让内容区在页面中间显示） */
+    background-color: #ff9500; /* 内容区背景色为橙色（覆盖了外层html的蓝色） */
+    padding: 0 20px 20px 20px; /* 内边距：上0、右20px、下20px、左20px（内容与边框的距离） */
+    border: 5px solid black; /* 边框：5像素宽、实线、黑色 */
+  }
+
+/* 再次对h1标签设置样式（补充前面的设置） */
+h1 {
+    margin: 0; /* 清除默认的外边距 */
+    padding: 20px 0; /* 上下内边距20px，左右0（让标题与上下内容拉开距离） */
+    color: #00539f; /* 标题文字颜色为深蓝色（和html背景色呼应） */
+    text-shadow: 3px 3px 1px black; /* 文字阴影：水平偏移3px、垂直偏移3px、模糊1px、黑色阴影 */
+  }
+
+/* 对img标签（图片）设置样式 */
+img {
+    display: block; /* 把图片从"行内元素"转为"块级元素"（块级元素才能设置自动居中） */
+    margin: 0 auto; /* 图片在父容器中水平居中 */
+  }
+
+.href_text {
+    font-weight: bold; /* 链接文字颜色为白色 */
+    text-decoration: none; /* 去掉链接的下划线 */
+  }
+
+  .href_text:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+  }
